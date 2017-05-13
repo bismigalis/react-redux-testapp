@@ -42,15 +42,17 @@
     "redux-devtools": "^3.4.0",
     "webpack": "^1.12.2",
     "webpack-dev-middleware": "^1.6.1",
-    "webpack-hot-middleware": "^2.10.0"
-    "style-loader": "^0.17.0",
+    "webpack-hot-middleware": "^2.10.0",
+    "style-loader": "^0.17.0"
   },
   "dependencies": {
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
     "react-redux": "^5.0.4",
+    "react-star-rating-component": "^1.2.4",
     "react-table": "^6.0.0",
     "redux": "^3.6.0",
-    "redux-form": "^6.7.0"
+    "redux-form": "^6.7.0",
+    "validate.js": "^0.11.1"
   }
 }

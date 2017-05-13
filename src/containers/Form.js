@@ -1,30 +1,16 @@
-import React, { Component } from 'react'
-import { reduxForm, Field } from 'redux-form' // imported Field
+import React, { Component }  from 'react';
+import { connect } from 'react-redux';
+import Form from '../components/Form'
+import {addFilm} from '../actions';
 
+/* const FormContainer = ({addFilm}) => (
+ *     <Form addFilm={addFilm}></Form>
+ * );*/
 
-class MyForm extends Component {
-  render() {
-    const { handleSubmit } = this.props;
-    return (
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="firstName">First Name</label>
-          <Field name="firstName" component="input" type="text"/>
-        </div>
-        <div>
-          <label htmlFor="lastName">Last Name</label>
-          <Field name="lastName" component="input" type="text"/>
-        </div>
-        <div>
-          <label htmlFor="email">Email</label>
-          <Field name="email" component="input" type="email"/>
-        </div>
-        <button type="submit">Submit</button>
-      </form>
-    );
+const mapDispatchToProps = (dispatch, ownProps) => ({
+  addFilm: (data) => {
+    dispatch(addFilm(data))
   }
-}
-export default reduxForm({
-  form: 'myForm'
-                                              // no fields array given
-})(MyForm);
+})
+
+export default connect(null, mapDispatchToProps)(Form);

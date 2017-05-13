@@ -17,15 +17,15 @@ export default function configureStore() {
       // form: {title: ''
       // },
 
-      films: [{'title': 'Terminator',
-                                  year: 1987,
-                                  genre: 'Action',
-                                  rating: 3},
-                                 {'title': 'Predator',
-                                  year: 1990,
-                                  genre: 'Fiction',
-                                  rating: 4}
-                             ]
+      // films: [{'title': 'Terminator',
+      //                             year: 1987,
+      //                             genre: 'Action',
+      //                             rating: 3},
+      //                            {'title': 'Predator',
+      //                             year: 1990,
+      //                             genre: 'Fiction',
+      //                             rating: 4}
+      //                        ]
                      };
   const store = createStore(rootReducer, initialState);
   if(module.hot) {
