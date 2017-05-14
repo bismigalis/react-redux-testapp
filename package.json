@@ -1,32 +1,26 @@
 {
-  "name": "react-hot-boilerplate",
+  "name": "react-redux-testapp",
   "version": "1.0.0",
   "description": "Boilerplate for ReactJS project with hot code reloading",
   "scripts": {
-    "start": "node server.js",
-    "lint": "eslint src"
+      "start": "node server.js",
+      "lint": "eslint src",
+      "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gaearon/react-hot-boilerplate.git"
+    "url": "https://github.com/bismigalis/react-redux-testapp.git"
   },
   "keywords": [
     "react",
-    "reactjs",
-    "boilerplate",
-    "hot",
-    "reload",
-    "hmr",
-    "live",
-    "edit",
-    "webpack"
+    "redux"
   ],
-  "author": "Dan Abramov <dan.abramov@me.com> (http://github.com/gaearon)",
+  "author": "Ruslan Prokopiev <bismigalis@gmail.com> (http://github.com/bismigalis)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gaearon/react-hot-boilerplate/issues"
+    "url": "https://github.com/bismigalis/react-redux-testapp/issues"
   },
-  "homepage": "https://github.com/gaearon/react-hot-boilerplate",
+  "homepage": "https://github.com/bismigalis/react-redux-testapp",
   "devDependencies": {
     "babel-core": "^6.0.20",
     "babel-eslint": "^4.1.3",
@@ -38,12 +32,13 @@
     "eslint": "^1.10.3",
     "eslint-plugin-react": "^3.6.2",
     "express": "^4.13.4",
+    "jest": "^20.0.1",
     "react-hot-loader": "^1.3.0",
     "redux-devtools": "^3.4.0",
+    "style-loader": "^0.17.0",
     "webpack": "^1.12.2",
     "webpack-dev-middleware": "^1.6.1",
-    "webpack-hot-middleware": "^2.10.0",
-    "style-loader": "^0.17.0"
+    "webpack-hot-middleware": "^2.10.0"
   },
   "dependencies": {
     "react": "^15.3.0",
@@ -52,7 +47,6 @@
     "react-star-rating-component": "^1.2.4",
     "react-table": "^6.0.0",
     "redux": "^3.6.0",
-    "redux-form": "^6.7.0",
     "validate.js": "^0.11.1"
   }
 }

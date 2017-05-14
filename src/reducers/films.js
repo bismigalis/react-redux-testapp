@@ -6,10 +6,6 @@ const films = (state = [], action) => {
         ...state,
         action.data
       ]
-    // case 'TOGGLE_TODO':
-    //   return state.map(t =>
-    //     todo(t, action)
-    //   )
     default:
       return state;
   }
